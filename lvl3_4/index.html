@@ -6,11 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Übungen lvl3</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <main>
+        <h2>Gib mir eine Zahl</h2>
+        <p>Ich werde alle Zahlen bis zu dieser Zahl addieren, falls sie durch einer der ausgewählten Zahlen teilbar ist
+        </p>
 
-    <script src="./main.js"></script>
+        <form action="">
+            <label for="max">Maximale Zahl</label>
+            <input id="max" type="number" min="0" max="10">
+            <br>
+
+            <label for="first">Erste Zahl</label>
+            <select name="first" id="first">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <label for="second">Zweite Zahl</label>
+            <select name="second" id="second">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <button id="count">Count</button>
+            <p id="gesamtsumme"></p>
+        </form>
+        <script src="./main.js"></script>
+    </main>
 </body>
 
 </html>
